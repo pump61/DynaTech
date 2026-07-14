@@ -4,7 +4,6 @@ import io.github.thebusybiscuit.slimefun4.api.MinecraftVersion;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import me.profelements.dynatech.items.backpacks.PicnicBasket;
-import me.profelements.dynatech.items.misc.DimensionalHomeDimension;
 import me.profelements.dynatech.items.tools.ElectricalStimulator;
 import me.profelements.dynatech.listeners.BlockBreakBlockListener;
 import me.profelements.dynatech.listeners.CoalCokeListener;
@@ -30,7 +29,6 @@ import me.profelements.dynatech.utils.RecipeRegistry;
 import net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
-import org.bukkit.WorldCreator;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
@@ -56,8 +54,8 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
         setInstance(this);
 
         if (!getServer().getPluginManager().isPluginEnabled("GuizhanLibPlugin")) {
-            getLogger().log(Level.SEVERE, "本插件需要 鬼斩前置库插件(GuizhanLibPlugin) 才能运行!");
-            getLogger().log(Level.SEVERE, "从此处下载: https://50L.cc/gzlib");
+            getLogger().log(Level.SEVERE, "Este plugin precisa do GuizhanLibPlugin para funcionar!");
+            getLogger().log(Level.SEVERE, "Baixe aqui: https://50L.cc/gzlib");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
@@ -73,11 +71,6 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
 
         new Metrics(this, 9689);
 
-        if (!getConfig().getBoolean("options.disable-dimensionalhome-world")) {
-            WorldCreator worldCreator = new WorldCreator("dimensionalhome");
-            worldCreator.generator(new DimensionalHomeDimension());
-            worldCreator.createWorld();
-        }
         DynaTechLiquids.registerLiquids(DynaTech.getLiquidRegistry());
 
         DynaTechItemsSetup.setup(this);
@@ -111,7 +104,7 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
         }
 
         if (!Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_19)) {
-            getLogger().warning("DynaTech 仅支持 1.19+，请更新服务器版本后运行本插件。");
+            getLogger().warning("DynaTech só suporta 1.19+, atualize a versão do servidor para rodar este plugin.");
             getServer().getPluginManager().disablePlugin(this);
         }
 

@@ -151,13 +151,13 @@ public class WirelessEnergyPoint extends SlimefunItem implements EnergyNetProvid
         ItemMeta im = item.getItemMeta();
         List<Component> lore = im.lore();
         for (int i = 0; i < lore.size(); i++) {
-            if (lore.get(i).contains(Component.text("绑定位置: "))) {
+            if (lore.get(i).contains(Component.text("Posição vinculada: "))) {
                 lore.remove(i);
             }
         }
 
         lore.add(Component.text(
-                ChatColor.WHITE + "绑定位置: " + l.getWorld().getName() + " " + l.getBlockX() + " " + l.getBlockY()
+                ChatColor.WHITE + "Posição vinculada: " + l.getWorld().getName() + " " + l.getBlockX() + " " + l.getBlockY()
                         + " " + l.getBlockZ()));
 
         im.lore(lore);

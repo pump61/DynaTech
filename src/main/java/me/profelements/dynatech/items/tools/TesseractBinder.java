@@ -86,6 +86,6 @@ public class TesseractBinder extends SlimefunItem {
 
     private void bind(Location loc, String locStr, Player p) {
         StorageCacheUtils.setData(loc, "tesseract-pair-location", locStr);
-        p.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(ChatColor.GREEN + "已绑定光学传输器!"));
+        p.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(ChatColor.GREEN + "Transmissor Óptico vinculado!"));
     }
 }

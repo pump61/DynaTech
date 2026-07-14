@@ -20,92 +20,92 @@ import dev.j3fftw.extrautils.utils.LoreBuilderDynamic;
 public class Items {
 
     private static final String ID_LORE = "&7ID: <ID>";
-    private static final String RIGHT_CLICK_LORE = "&e右键点击&7以打开";
-    private static final String THREE_X_PROD_LORE = "&c3 倍产量";
+    private static final String RIGHT_CLICK_LORE = "&eClique direito&7 para abrir";
+    private static final String THREE_X_PROD_LORE = "&c3x de produção";
 
     // START Mechanical Components
     public static final ItemWrapper WOOD_MACHINE_CORE = ItemWrapper.create(Keys.WOOD_MACHINE_CORE,
             new SlimefunItemStack(
                     Items.Keys.WOOD_MACHINE_CORE.asSlimefunId(),
-                    Material.MANGROVE_WOOD, "&f木质机器核心"));
+                    Material.MANGROVE_WOOD, "&fNúcleo de Máquina de Madeira"));
 
     public static final ItemWrapper STONE_MACHINE_CORE = ItemWrapper.create(Keys.STONE_MACHINE_CORE,
             new SlimefunItemStack(
                     Items.Keys.STONE_MACHINE_CORE.asSlimefunId(),
-                    Material.SMOOTH_STONE, "&f石制机器核心"));
+                    Material.SMOOTH_STONE, "&fNúcleo de Máquina de Pedra"));
 
     public static final ItemWrapper IRON_MACHINE_CORE = ItemWrapper.create(Keys.IRON_MACHINE_CORE,
             new SlimefunItemStack(
                     Items.Keys.IRON_MACHINE_CORE.asSlimefunId(),
-                    Material.GRAY_CONCRETE, "&f铁制机器核心"));
+                    Material.GRAY_CONCRETE, "&fNúcleo de Máquina de Ferro"));
 
     public static final ItemWrapper DIAMOND_MACHINE_CORE = ItemWrapper.create(Keys.DIAMOND_MACHINE_CORE,
             new SlimefunItemStack(
                     Items.Keys.DIAMOND_MACHINE_CORE.asSlimefunId(),
-                    Material.LIGHT_BLUE_CONCRETE, "&f钻石机器核心"));
+                    Material.LIGHT_BLUE_CONCRETE, "&fNúcleo de Máquina de Diamante"));
 
     public static final ItemWrapper ENCHANTED_MACHINE_CORE = ItemWrapper.create(Keys.ENCHANTED_MACHINE_CORE,
             new SlimefunItemStack(
                     Items.Keys.ENCHANTED_MACHINE_CORE.asSlimefunId(),
-                    Material.RESPAWN_ANCHOR, "&b附魔机器核心"));
+                    Material.RESPAWN_ANCHOR, "&bNúcleo de Máquina Encantado"));
 
     public static final ItemWrapper ANCIENT_MACHINE_CORE = ItemWrapper.create(Keys.ANCIENT_MACHINE_CORE,
             new SlimefunItemStack(Keys.ANCIENT_MACHINE_CORE.asSlimefunId(), Material.LAPIS_BLOCK,
-                    "&f远古机器核心"));
+                    "&fNúcleo de Máquina Ancestral"));
 
     public static final ItemWrapper ENERGY_STORAGE_COMPONENT = ItemWrapper.create(Keys.ENERGY_STORAGE_COMPONENT,
             new SlimefunItemStack(
                     Items.Keys.ENERGY_STORAGE_COMPONENT.asSlimefunId(), Material.REDSTONE_LAMP,
-                    "&c电力储存组件"));
+                    "&cComponente de Armazenamento de Energia"));
 
     public static final ItemWrapper ENERGY_INPUT_COMPONENT = ItemWrapper.create(Keys.ENERGY_INPUT_COMPONENT,
             new SlimefunItemStack(
                     Items.Keys.ENERGY_INPUT_COMPONENT.asSlimefunId(),
-                    Material.COMPARATOR, "&c电力输入组件"));
+                    Material.COMPARATOR, "&cComponente de Entrada de Energia"));
 
     public static final ItemWrapper ENERGY_OUTPUT_COMPONENT = ItemWrapper.create(Keys.ENERGY_OUTPUT_COMPONENT,
             new SlimefunItemStack(
                     Items.Keys.ENERGY_OUTPUT_COMPONENT.asSlimefunId(),
-                    Material.REPEATER, "&c电力输出组件"));
+                    Material.REPEATER, "&cComponente de Saída de Energia"));
 
     public static final ItemWrapper DEGRADED_WATER_MILL = ItemWrapper.create(Keys.DEGRADED_WATER_MILL,
             new SlimefunItemStack(
                     Items.Keys.DEGRADED_WATER_MILL.asSlimefunId(),
-                    Material.COBBLESTONE_WALL, "&c破损的水力发电机"));
+                    Material.COBBLESTONE_WALL, "&cMoinho D'Água Quebrado"));
 
     public static final ItemWrapper DEGRADED_WATER_MILL_2 = ItemWrapper.create(Keys.DEGRADED_WATER_MILL_2,
             new SlimefunItemStack(
                     Items.Keys.DEGRADED_WATER_MILL_2.asSlimefunId(),
-                    Material.PRISMARINE_WALL, "&c破损的水力涡轮发电机"));
+                    Material.PRISMARINE_WALL, "&cTurbina D'Água Quebrada"));
 
     public static final ItemWrapper DEGRADED_WIND_MILL = ItemWrapper.create(Keys.DEGRADED_WIND_MILL,
             new SlimefunItemStack(
                     Items.Keys.DEGRADED_WIND_MILL.asSlimefunId(),
-                    Material.LIGHT_GRAY_GLAZED_TERRACOTTA, "&c破损的风力发电机"));
+                    Material.LIGHT_GRAY_GLAZED_TERRACOTTA, "&cMoinho de Vento Quebrado"));
 
     public static final ItemWrapper DEGRADED_WIND_MILL_2 = ItemWrapper.create(Keys.DEGRADED_WIND_MILL_2,
             new SlimefunItemStack(
                     Items.Keys.DEGRADED_WIND_MILL_2.asSlimefunId(),
-                    Material.GRAY_GLAZED_TERRACOTTA, "&c破损的风力涡轮发电机"));
+                    Material.GRAY_GLAZED_TERRACOTTA, "&cTurbina Eólica Quebrada"));
 
     public static final ItemWrapper DEGRADED_EGG_MILL = ItemWrapper.create(Keys.DEGRADED_WIND_MILL,
             new SlimefunItemStack(
                     Items.Keys.DEGRADED_EGG_MILL.asSlimefunId(),
-                    Material.CRYING_OBSIDIAN, "&c破损的龙蛋发电机"));
+                    Material.CRYING_OBSIDIAN, "&cGerador de Ovo de Dragão Quebrado"));
 
     public static final ItemWrapper DEGRADED_EGG_MILL_2 = ItemWrapper.create(Keys.DEGRADED_WIND_MILL_2,
             new SlimefunItemStack(
                     Items.Keys.DEGRADED_EGG_MILL_2.asSlimefunId(),
-                    Material.RESPAWN_ANCHOR, "&c破损的龙蛋涡轮发电机"));
+                    Material.RESPAWN_ANCHOR, "&cTurbina de Ovo de Dragão Quebrada"));
     // END Mechanical Components
 
     // START Energy Generators
     public static final ItemWrapper WATER_MILL = ItemWrapper.create(Keys.WATER_MILL,
             new SlimefunItemStack(Items.Keys.WATER_MILL.asSlimefunId(),
                     Material.COBBLESTONE_WALL,
-                    "&b水力发电机",
+                    "&bMoinho D'Água",
                     "",
-                    "&7会在运行一段时间后破损。",
+                    "&7Vai quebrar depois de rodar por um tempo.",
                     "",
 
                     LoreBuilder.machine(MachineTier.BASIC, MachineType.GENERATOR),
@@ -115,9 +115,9 @@ public class Items {
     public static final ItemWrapper WATER_MILL_2 = ItemWrapper.create(Keys.WATER_MILL_2,
             new SlimefunItemStack(Items.Keys.WATER_MILL_2.asSlimefunId(),
                     Material.PRISMARINE_WALL,
-                    "&b水力涡轮发电机",
+                    "&bTurbina D'Água",
                     "",
-                    "&7会在运行一段时间后破损。",
+                    "&7Vai quebrar depois de rodar por um tempo.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
                     LoreBuilderDynamic.powerPerTick(64),
@@ -126,33 +126,33 @@ public class Items {
     public static final ItemWrapper WIND_MILL = ItemWrapper.create(Keys.WIND_MILL,
             new SlimefunItemStack(Items.Keys.WIND_MILL.asSlimefunId(),
                     Material.LIGHT_GRAY_GLAZED_TERRACOTTA,
-                    "&b风力发电机",
+                    "&bMoinho de Vento",
                     "",
-                    "&7会在运行一段时间后破损。",
+                    "&7Vai quebrar depois de rodar por um tempo.",
                     "",
                     LoreBuilder.machine(MachineTier.BASIC, MachineType.GENERATOR),
-                    "&fMinimum Energy Generation Rate: &b16j/tick",
-                    "&fMaximum Energy Generation Rate: &b64j/tick",
+                    "&fTaxa Mínima de Geração: &b16 J/tick",
+                    "&fTaxa Máxima de Geração: &b64 J/tick",
                     LoreBuilder.powerBuffer(256)));
 
     public static final ItemWrapper WIND_MILL_2 = ItemWrapper.create(Keys.WIND_MILL_2,
             new SlimefunItemStack(Items.Keys.WIND_MILL_2.asSlimefunId(),
                     Material.GRAY_GLAZED_TERRACOTTA,
-                    "&b风力涡轮发电机",
+                    "&bTurbina Eólica",
                     "",
-                    "&7会在运行一段时间后破损。",
+                    "&7Vai quebrar depois de rodar por um tempo.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
-                    "&fMinimum Energy Generation Rate: &b64j/tick",
-                    "&fMaximum Energy Generation Rate: &b256j/tick",
+                    "&fTaxa Mínima de Geração: &b64 J/tick",
+                    "&fTaxa Máxima de Geração: &b256 J/tick",
                     LoreBuilder.powerBuffer(1024)));
 
     public static final ItemWrapper EGG_MILL = ItemWrapper.create(Keys.EGG_MILL,
             new SlimefunItemStack(Items.Keys.EGG_MILL.asSlimefunId(),
                     Material.CRYING_OBSIDIAN,
-                    "&b龙蛋发电机",
+                    "&bGerador de Ovo de Dragão",
                     "",
-                    "&7会在运行一段时间后破损。",
+                    "&7Vai quebrar depois de rodar por um tempo.",
                     "",
                     LoreBuilder.machine(MachineTier.BASIC, MachineType.GENERATOR),
                     LoreBuilderDynamic.powerPerTick(16),
@@ -161,9 +161,9 @@ public class Items {
     public static final ItemWrapper EGG_MILL_2 = ItemWrapper.create(Keys.EGG_MILL_2,
             new SlimefunItemStack(Items.Keys.EGG_MILL_2.asSlimefunId(),
                     Material.RESPAWN_ANCHOR,
-                    "&b龙蛋涡轮发电机",
+                    "&bTurbina de Ovo de Dragão",
                     "",
-                    "&7会在运行一段时间后破损。",
+                    "&7Vai quebrar depois de rodar por um tempo.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
                     LoreBuilderDynamic.powerPerTick(64),
@@ -173,21 +173,21 @@ public class Items {
             new SlimefunItemStack(
                     Items.Keys.DURABILITY_GENERATOR.asSlimefunId(),
                     Material.SPRUCE_WOOD,
-                    "&b破碎发电机",
+                    "&bGerador de Desgaste",
                     "",
-                    "&7消耗物品耐久度来发电。",
+                    "&7Consome a durabilidade de itens para gerar energia.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
                     LoreBuilder.powerBuffer(256),
-                    LoreBuilderDynamic.power(8, " 每点耐久")));
+                    LoreBuilderDynamic.power(8, " por ponto de durabilidade")));
 
     public static final ItemWrapper FOOD_GENERATOR = ItemWrapper.create(Keys.FOOD_GENERATOR,
             new SlimefunItemStack(
                     Items.Keys.FOOD_GENERATOR.asSlimefunId(),
                     Material.BLAST_FURNACE,
-                    "&b烹饪发电机",
+                    "&bGerador Culinário",
                     "",
-                    "&7消耗食物来发电。",
+                    "&7Consome comida para gerar energia.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
                     LoreBuilder.powerBuffer(256),
@@ -197,9 +197,9 @@ public class Items {
             new SlimefunItemStack(
                     Items.Keys.STARDUST_GENERATOR.asSlimefunId(),
                     Material.IRON_BLOCK,
-                    "&b星尘反应堆",
+                    "&bReator de Poeira Estelar",
                     "",
-                    "&7使用星尘产生大量的电力。",
+                    "&7Usa poeira estelar para gerar grandes quantidades de energia.",
                     "",
                     LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
                     LoreBuilder.powerBuffer(32768),
@@ -210,67 +210,67 @@ public class Items {
     // START Materials
     public static final ItemWrapper STAINLESS_STEEL_INGOT = ItemWrapper.create(Keys.STAINLESS_STEEL_INGOT,
             new SlimefunItemStack(Keys.STAINLESS_STEEL_INGOT.asSlimefunId(), Material.IRON_INGOT,
-                    "&f不锈钢锭"));
+                    "&fLingote de Aço Inoxidável"));
 
     public static final ItemWrapper STAINLESS_STEEL_ROTOR = ItemWrapper.create(Keys.STAINLESS_STEEL_ROTOR,
             new SlimefunItemStack(Keys.STAINLESS_STEEL_ROTOR.asSlimefunId(), Material.IRON_BLOCK,
-                    "&f不锈钢转子"));
+                    "&fRotor de Aço Inoxidável"));
 
     public static final ItemWrapper COAL_COKE = ItemWrapper.create(Keys.COAL_COKE,
-            new SlimefunItemStack(Keys.COAL_COKE.asSlimefunId(), Material.COAL, "&f焦炭"));
+            new SlimefunItemStack(Keys.COAL_COKE.asSlimefunId(), Material.COAL, "&fCoque de Carvão"));
 
     public static final ItemWrapper BEE = ItemWrapper.create(Keys.BEE, new SlimefunItemStack(Keys.BEE.asSlimefunId(),
             PlayerHead.getItemStack(
                     PlayerSkin.fromHashCode("12724a9a4cdd68ba49415560e5be40b4a1c47cb5be1d66aedb52a30e62ef2d47")),
-            "&6蜜蜂"));
+            "&6Abelha"));
 
     public static final ItemWrapper ROBOTIC_BEE = ItemWrapper.create(Keys.ROBOTIC_BEE, new SlimefunItemStack(
             Keys.ROBOTIC_BEE.asSlimefunId(),
             PlayerHead.getItemStack(
                     PlayerSkin.fromHashCode("16f728c89904b2cb57f853d31d0e2061f52917981fedccb1e949528e08eb4140")),
-            "&6机械蜜蜂"));
+            "&6Abelha Robótica"));
 
     public static final ItemWrapper ADVANCED_ROBOTIC_BEE = ItemWrapper.create(Keys.ADVANCED_ROBOTIC_BEE,
             new SlimefunItemStack(Keys.ADVANCED_ROBOTIC_BEE.asSlimefunId(),
                     PlayerHead.getItemStack(
                             PlayerSkin.fromHashCode("c1c96e8cf83cbade55ffa667197ea6990290e5c7dc679104332caead97eef09")),
-                    "&6高级机械蜜蜂"));
+                    "&6Abelha Robótica Avançada"));
 
     public static final ItemWrapper VEX_GEM = ItemWrapper.create(Keys.VEX_GEM, new SlimefunItemStack(
             Keys.VEX_GEM.asSlimefunId(),
             PlayerHead.getItemStack(
                     PlayerSkin.fromHashCode("b91aeca7c17e66d867231b36d96e83c1ede75eaf67ccf3a88dca15d4114ae167")),
-            "&6恼鬼宝石"));
+            "&6Gema de Vex"));
 
     public static final ItemWrapper MACHINE_SCRAP = ItemWrapper.create(Keys.MACHINE_SCRAP, new SlimefunItemStack(
             Keys.MACHINE_SCRAP.asSlimefunId(),
             PlayerHead.getItemStack(
                     PlayerSkin.fromHashCode("13ea401c7e02d13cea1de6835ee9f5c47757d399dae5c2b9c3efde6ae63ea4a2")),
-            "&6机器碎片"));
+            "&6Sucata de Máquina"));
 
     public static final ItemWrapper ADVANCED_MACHINE_SCRAP = ItemWrapper.create(Keys.ADVANCED_MACHINE_SCRAP,
             new SlimefunItemStack(Keys.ADVANCED_MACHINE_SCRAP.asSlimefunId(),
                     PlayerHead.getItemStack(
                             PlayerSkin.fromHashCode("4b57a4c68d1d2c5de978ea6de4db91ef387ca6c37966bb8e7c8826f937e6c3")),
-                    "&6高级机器碎片"));
+                    "&6Sucata de Máquina Avançada"));
 
     public static final ItemWrapper STAR_DUST = ItemWrapper.create(Keys.STAR_DUST,
             new SlimefunItemStack(Keys.STAR_DUST.asSlimefunId(), Material.NETHER_STAR,
-                    "&6星尘"));
+                    "&6Poeira Estelar"));
 
     public static final ItemWrapper GHOSTLY_ESSENCE = ItemWrapper.create(Keys.GHOSTLY_ESSENCE,
             new SlimefunItemStack(Keys.GHOSTLY_ESSENCE.asSlimefunId(), Material.WHITE_DYE,
-                    "&6幽灵精华"));
+                    "&6Essência Fantasmagórica"));
 
     public static final ItemWrapper TESSERACTING_OBJ = ItemWrapper.create(Keys.TESSERACTING_OBJ,
             new SlimefunItemStack(Keys.TESSERACTING_OBJ.asSlimefunId(),
-                    Material.MUSHROOM_STEM, "&6光学物品", "&f&o在你手中闪闪发光，不断变化"));
+                    Material.MUSHROOM_STEM, "&6Objeto Óptico", "&f&oBrilha e muda de forma constantemente em sua mão"));
 
     public static final ItemWrapper LIVINGROCK = ItemWrapper.create(Keys.LIVINGROCK,
-            new SlimefunItemStack(Keys.LIVINGROCK.asSlimefunId(), Material.DEEPSLATE_TILES, "&6Livingrock"));
+            new SlimefunItemStack(Keys.LIVINGROCK.asSlimefunId(), Material.DEEPSLATE_TILES, "&6Pedra Viva"));
 
     public static final ItemWrapper LIVINGWOOD = ItemWrapper.create(Keys.LIVINGWOOD,
-            new SlimefunItemStack(Keys.LIVINGWOOD.asSlimefunId(), Material.OAK_WOOD, "&6Livingwood"));
+            new SlimefunItemStack(Keys.LIVINGWOOD.asSlimefunId(), Material.OAK_WOOD, "&6Madeira Viva"));
     // END Materials
     // START Tools
     public static final ItemWrapper ELECTRICAL_STIMULATOR = ItemWrapper.create(Keys.ELECTRICAL_STIMULATOR,
@@ -278,21 +278,21 @@ public class Items {
                     new CustomItemStack(PlayerHead.getItemStack(
                             PlayerSkin
                                     .fromHashCode("82a319cf66a4de12e3330e8bc4c82c985ccc3cb2230868c336a88fc4a22082a"))),
-                    "&6电力刺激器",
+                    "&6Estimulador Elétrico",
                     "",
-                    "&f消耗电力自动喂食。",
+                    "&fConsome energia para se alimentar automaticamente.",
                     "",
-                    "&f&o刺激你的感官。",
+                    "&f&oEstimula seus sentidos.",
                     "",
                     LoreBuilder.powerCharged(0, 1024)));
 
     public static final ItemWrapper INVENTORY_FILTER = ItemWrapper.create(Keys.INVENTORY_FILTER,
             new SlimefunItemStack(Keys.INVENTORY_FILTER.asSlimefunId(),
                     Material.IRON_BARS,
-                    "&6背包过滤器",
+                    "&6Filtro de Inventário",
                     "",
-                    "&f存在于过滤器中的物品",
-                    "&f将不会被拾起。",
+                    "&fItens presentes no filtro",
+                    "&fnão serão coletados automaticamente.",
                     "",
                     ID_LORE,
                     "",
@@ -301,56 +301,56 @@ public class Items {
     public static final ItemWrapper ANGEL_GEM = ItemWrapper.create(Keys.ANGEL_GEM,
             new SlimefunItemStack(Keys.ANGEL_GEM.asSlimefunId(),
                     Material.NETHERITE_BLOCK,
-                    "&6飞行宝石",
+                    "&6Gema Alada",
                     "",
-                    "&f永久的创造模式飞行。",
-                    "&f可更改飞行速度。",
+                    "&fVoo permanente em modo criativo.",
+                    "&fVelocidade de voo ajustável.",
                     "",
-                    "&f&o像小鸟一样飞行~",
+                    "&f&oVoe como um pássaro~",
                     "",
-                    "&7飞行：<状态>",
-                    "&7飞行速度：<速度>"));
+                    "&7Voo: <status>",
+                    "&7Velocidade de voo: <velocidade>"));
 
     public static final ItemWrapper RECIPE_BOOK = ItemWrapper.create(Keys.RECIPE_BOOK,
             new SlimefunItemStack(Keys.RECIPE_BOOK.asSlimefunId(), Material.BOOK,
-                    "&6动力科技配方书"));
+                    "&6Livro de Receitas DynaTech"));
 
     public static final ItemWrapper AUTO_INPUT_UPGRADE = ItemWrapper.create(Keys.AUTO_INPUT_UPGRADE,
             new SlimefunItemStack(Keys.AUTO_INPUT_UPGRADE.asSlimefunId(),
-                    Material.BLUE_STAINED_GLASS_PANE, "&6自动输入升级模块"));
+                    Material.BLUE_STAINED_GLASS_PANE, "&6Módulo de Upgrade de Entrada Automática"));
 
     public static final ItemWrapper AUTO_OUTPUT_UPGRADE = ItemWrapper.create(Keys.AUTO_OUTPUT_UPGRADE,
             new SlimefunItemStack(Keys.AUTO_OUTPUT_UPGRADE.asSlimefunId(),
-                    Material.RED_STAINED_GLASS_PANE, "&6自动输出升级模块"));
+                    Material.RED_STAINED_GLASS_PANE, "&6Módulo de Upgrade de Saída Automática"));
 
     public static final ItemWrapper FLUID_TANK = ItemWrapper.create(Keys.FLUID_TANK,
-            new SlimefunItemStack(Keys.FLUID_TANK.asSlimefunId(), Material.BUCKET, "&f液体罐"));
+            new SlimefunItemStack(Keys.FLUID_TANK.asSlimefunId(), Material.BUCKET, "&fTanque de Líquido"));
 
     public static final ItemWrapper LIQUID_TANK = ItemWrapper.create(Keys.LIQUID_TANK,
             new SlimefunItemStack(Keys.LIQUID_TANK.asSlimefunId(),
                     Material.BUCKET,
-                    "&6便携式液体罐",
+                    "&6Tanque de Líquido Portátil",
                     "",
-                    "&f简单的液体掠夺者。",
+                    "&fUm pilhador de líquidos simples.",
                     "",
-                    "&e右键点击&7装载液体",
-                    "&eShift + 右键点击&7倾倒液体",
+                    "&eClique direito&7 para coletar líquido",
+                    "&eShift + Clique direito&7 para despejar líquido",
                     "",
-                    "&f当前液体：&7无",
-                    "&f存量：0mb / 16000",
+                    "&fLíquido atual: &7Nenhum",
+                    "&fArmazenado: 0mb / 16000",
                     ""));
 
     public static final ItemWrapper PICNIC_BASKET = ItemWrapper.create(Keys.PICNIC_BASKET,
             new SlimefunItemStack(Keys.PICNIC_BASKET.asSlimefunId(),
                     new CustomItemStack(PlayerHead.getItemStack(
                             PlayerSkin.fromHashCode("7a6bf916e28ccb80b4ebfacf98686ad6af7c4fb257e57a8cb78c71d19dccb2"))),
-                    "&6野餐篮",
+                    "&6Cesta de Piquenique",
                     "",
-                    "&f允许你储存食物",
-                    "&f在你的饥饿度降低时自动喂食",
-                    "&f必须在物品栏中才会生效",
+                    "&fPermite que você guarde comida",
+                    "&fe se alimente automaticamente quando",
+                    "&fsua fome diminuir. Precisa estar no inventário.",
                     "",
-                    "&f大小：&e27",
+                    "&fTamanho: &e27",
                     "",
                     ID_LORE,
                     "",
@@ -360,116 +360,90 @@ public class Items {
             new SlimefunItemStack(Keys.SOUL_BOUND_PICNIC_BASKET.asSlimefunId(),
                     new CustomItemStack(PlayerHead.getItemStack(
                             PlayerSkin.fromHashCode("7a6bf916e28ccb80b4ebfacf98686ad6af7c4fb257e57a8cb78c71d19dccb2"))),
-                    "&6灵魂绑定野餐篮",
+                    "&6Cesta de Piquenique Vinculada à Alma",
                     "",
-                    "&f允许你储存食物",
-                    "&f在你的饥饿度降低时自动喂食",
-                    "&f必须在物品栏中才会生效",
+                    "&fPermite que você guarde comida",
+                    "&fe se alimente automaticamente quando",
+                    "&fsua fome diminuir. Precisa estar no inventário.",
                     "",
-                    "&f大小：&e27",
+                    "&fTamanho: &e27",
                     "",
                     ID_LORE,
                     "",
                     RIGHT_CLICK_LORE,
                     "",
-                    "&d灵魂绑定"));
+                    "&dVínculo da Alma"));
 
     public static final ItemWrapper SCOOP = ItemWrapper.create(Keys.SCOOP,
             new SlimefunItemStack(Keys.SCOOP.asSlimefunId(),
                     Material.IRON_SHOVEL,
-                    "&6勺子",
+                    "&6Coletor de Abelhas",
                     "",
-                    "&f用于捕捉蜜蜂",
+                    "&fUsado para capturar abelhas.",
                     "",
-                    "&f&o别被蛰了！",
+                    "&f&oCuidado para não ser picado!",
                     "",
                     LoreBuilder.powerCharged(0, 512)));
-
-    public static final ItemWrapper DIMENSIONAL_HOME = ItemWrapper.create(Keys.DIMENSIONAL_HOME, new SlimefunItemStack(
-            Keys.DIMENSIONAL_HOME.asSlimefunId(),
-            new CustomItemStack(PlayerHead.getItemStack(
-                    PlayerSkin.fromHashCode("eb18cf9e1bf7ec57304ae92f2b00d91643cf0b65067dead34fb48baf18e3c385"))),
-            "&6异次元之家",
-            "",
-            "&f可以将你传送到异次元的家",
-            "&f或返回原来的位置",
-            "",
-            "&f&o家，甜蜜的家",
-            "",
-            "&7区块 ID：<id>"));
 
     public static final ItemWrapper ITEM_BAND_HASTE = ItemWrapper.create(Keys.ITEM_BAND_HASTE, new SlimefunItemStack(
             Keys.ITEM_BAND_HASTE.asSlimefunId(),
             new CustomItemStack(PlayerHead.getItemStack(
                     PlayerSkin.fromHashCode("4f01ec6331a3bc30a8204ec56398d08ca38788556bca9b81d776f6238d567367"))),
-            "&6物品模组：急速",
+            "&6Módulo de Item: Pressa",
             "",
-            "&9使用物品模组管理器安装",
-            "&f当安装到防具或工具上时",
-            "&f提供急迫 II 的效果",
+            "&9Instale usando o Gerenciador de Módulos de Item",
+            "&fQuando instalado em armadura ou ferramenta,",
+            "&fconcede o efeito de Pressa II",
             "",
-            "&f&o原始人，起洞！"));
+            "&f&oCaverna primitiva, vamos cavar!"));
 
     public static final ItemWrapper ITEM_BAND_HEALTH = ItemWrapper.create(Keys.ITEM_BAND_HEALTH, new SlimefunItemStack(
             Keys.ITEM_BAND_HEALTH.asSlimefunId(),
             new CustomItemStack(PlayerHead.getItemStack(
                     PlayerSkin.fromHashCode("f1e2428cb359988f4c4ff0e61de21385c62269de19a69762d773223b75dd1666"))),
-            "&6物品模组：生命提升",
+            "&6Módulo de Item: Vida Extra",
             "",
-            "&9使用物品模组管理器安装",
-            "&f当安装到防具或工具上时",
-            "&f提供生命提升 II 的效果",
+            "&9Instale usando o Gerenciador de Módulos de Item",
+            "&fQuando instalado em armadura ou ferramenta,",
+            "&fconcede o efeito de Vida Extra II",
             "",
-            "&f&o原始人，起洞！"));
+            "&f&oCaverna primitiva, vamos cavar!"));
 
     public static final ItemWrapper TESSERACT_BINDER = ItemWrapper.create(Keys.TESSERACT_BINDER,
             new SlimefunItemStack(Keys.TESSERACT_BINDER.asSlimefunId(),
                     Material.NETHERITE_HOE,
-                    "&6光学绑定仪",
+                    "&6Vinculador Óptico",
                     "",
-                    "&f用于绑定光学传输器。",
+                    "&fUsado para vincular Transmissores Ópticos.",
                     "",
-                    "&e右键点击&f获取光学传输器的位置",
-                    "&eShift + 右键点击&f将获取的位置绑定至光学传输器",
+                    "&eClique direito&f para obter a posição de um Transmissor Óptico",
+                    "&eShift + Clique direito&f para vincular a posição obtida a um Transmissor Óptico",
                     ""));
 
     public static final ItemWrapper WITHER_SKELETON_GOLEM = ItemWrapper.create(Keys.WITHER_SKELETON_GOLEM,
             new SlimefunItemStack(Keys.WITHER_SKELETON_GOLEM.asSlimefunId(),
                     Material.WITHER_SKELETON_SKULL,
-                    "&6多方块结构：凋灵傀儡",
+                    "&6Multibloco: Golem do Esqueleto Wither",
                     "",
-                    "&7生成一只凋灵骷髅",
+                    "&7Invoca um Esqueleto Wither",
                     ""));
 
     // END Tools
     // START Machines
     public static final ItemWrapper COAL_COKE_OVEN = ItemWrapper.create(Keys.COAL_COKE_OVEN,
             new SlimefunItemStack(Keys.COAL_COKE_OVEN.asSlimefunId(),
-                    Material.SMOKER, "&f焦炭控制器"));
-
-    public static final ItemWrapper AUTO_KITCHEN = ItemWrapper.create(Keys.AUTO_KITCHEN,
-            new SlimefunItemStack(Keys.AUTO_KITCHEN.asSlimefunId(),
-                    Material.SMOKER,
-                    "&6自动厨房",
-                    "",
-                    "&f自动制作厨房配方",
-                    "",
-                    "&f&o闻起来像曲奇",
-                    "",
-                    LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
-                    LoreBuilder.speed(1),
-                    LoreBuilderDynamic.powerPerSecond(16)));
+                    Material.SMOKER, "&fControlador de Forno de Coque"));
 
     public static final ItemWrapper KITCHEN_AUTO_CRAFTER = ItemWrapper.create(Keys.KITCHEN_AUTO_CRAFTER,
             new SlimefunItemStack(Keys.KITCHEN_AUTO_CRAFTER.asSlimefunId(),
                     new CustomItemStack(PlayerHead.getItemStack(
                             PlayerSkin
                                     .fromHashCode("c5c5b24cd5efa07d31beea655d7ff972e6f47cdb898be4404363deeba43ba5d"))),
-                    "&6厨房自动合成机",
+                    "&6Auto-Fabricador de Cozinha",
                     "",
-                    "&f自动制作厨房配方",
+                    "&fFabrica receitas de cozinha automaticamente",
                     "",
-                    "&f&o闻起来像曲奇",
+                    "&f&oCheira a biscoito",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilder.speed(1),
@@ -478,9 +452,10 @@ public class Items {
     public static final ItemWrapper ANTIGRAVITY_BUBBLE = ItemWrapper.create(Keys.ANTIGRAVITY_BUBBLE,
             new SlimefunItemStack(Keys.ANTIGRAVITY_BUBBLE.asSlimefunId(),
                     Material.OBSIDIAN,
-                    "&6反重力泡泡",
+                    "&6Bolha Antigravidade",
                     "",
-                    "&f在 45 格范围内提供创造模式飞行",
+                    "&fConcede voo em modo criativo",
+                    "&fnum raio de 45 blocos",
                     "",
                     LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
                     LoreBuilderDynamic.powerPerSecond(128)));
@@ -488,9 +463,9 @@ public class Items {
     public static final ItemWrapper WEATHER_CONTROLLER = ItemWrapper.create(Keys.WEATHER_CONTROLLER,
             new SlimefunItemStack(Keys.WEATHER_CONTROLLER.asSlimefunId(),
                     Material.BLUE_STAINED_GLASS,
-                    "&6天气控制器",
+                    "&6Controlador de Clima",
                     "",
-                    "&f通过物品来更改天气。",
+                    "&fMuda o clima usando itens.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilderDynamic.powerPerSecond(32)));
@@ -499,9 +474,9 @@ public class Items {
             Keys.POTION_SPRINKLER.asSlimefunId(),
             new CustomItemStack(PlayerHead.getItemStack(
                     PlayerSkin.fromHashCode("8d302104180cb79d5f4cf423649ddfa8ffb31a1875fa02a983cd248c72dfb0ea"))),
-            "&6药水喷洒器",
+            "&6Aspersor de Poções",
             "",
-            "&f可将药水效果应用到范围内的所有玩家。",
+            "&fAplica efeitos de poção a todos os jogadores no raio de alcance.",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
             LoreBuilderDynamic.powerPerSecond(32)));
@@ -510,9 +485,9 @@ public class Items {
             Keys.BARBED_WIRE.asSlimefunId(),
             new CustomItemStack(PlayerHead.getItemStack(
                     PlayerSkin.fromHashCode("b2ac6c219004d82dfa627ffab664f29c53ecc112d91c9d7a9c915c426832412"))),
-            "&6铁丝网",
+            "&6Arame Farpado",
             "",
-            "&f将范围内的怪物推开。",
+            "&fEmpurra monstros para longe dentro do raio de alcance.",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
             LoreBuilderDynamic.powerPerSecond(16)));
@@ -520,9 +495,11 @@ public class Items {
     public static final ItemWrapper MATERIAL_HIVE = ItemWrapper.create(Keys.MATERIAL_HIVE,
             new SlimefunItemStack(Keys.MATERIAL_HIVE.asSlimefunId(),
                     Material.BEEHIVE,
-                    "&6材料蜂巢",
+                    "&6Colmeia de Materiais",
                     "",
-                    "&f使用电力与蜜蜂缓慢生产材料。",
+                    "&fUsa energia e abelhas para produzir materiais lentamente.",
+                    "",
+                    "&c(Sem receitas disponíveis no momento)",
                     "",
                     LoreBuilder.radioactive(Radioactivity.HIGH),
                     "",
@@ -532,18 +509,18 @@ public class Items {
     public static final ItemWrapper WIRELESS_CHARGER = ItemWrapper.create(Keys.WIRELESS_CHARGER,
             new SlimefunItemStack(Keys.WIRELESS_CHARGER.asSlimefunId(),
                     Material.CLAY,
-                    "&6无线充电器",
+                    "&6Carregador Sem Fio",
                     "",
-                    "&f为你物品栏内的物品无线充电。",
+                    "&fCarrega itens no seu inventário remotamente.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilderDynamic.powerPerSecond(16)));
     public static final ItemWrapper SEED_PLUCKER = ItemWrapper.create(Keys.SEED_PLUCKER,
             new SlimefunItemStack(Keys.SEED_PLUCKER.asSlimefunId(),
                     Material.ORANGE_STAINED_GLASS,
-                    "&6种子提取器",
+                    "&6Extrator de Sementes",
                     "",
-                    "&f可从植物中提取种子。",
+                    "&fExtrai sementes de plantas.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilderDynamic.powerPerSecond(32)));
@@ -551,9 +528,9 @@ public class Items {
     public static final ItemWrapper BANDAID_MANAGER = ItemWrapper.create(Keys.BANDAID_MANAGER,
             new SlimefunItemStack(Keys.BANDAID_MANAGER.asSlimefunId(),
                     Material.LAPIS_BLOCK,
-                    "&6物品模组管理器",
+                    "&6Gerenciador de Módulos de Item",
                     "",
-                    "&f安装/卸载物品模组",
+                    "&fInstala/remove módulos de item",
                     "",
                     LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
                     LoreBuilderDynamic.powerPerSecond(48)));
@@ -561,24 +538,24 @@ public class Items {
     public static final ItemWrapper ORECHID = ItemWrapper.create(Keys.ORECHID,
             new SlimefunItemStack(Keys.ORECHID.asSlimefunId(),
                     Material.WITHER_ROSE,
-                    "&6凝矿兰",
+                    "&6Orquídea Mineral",
                     "",
-                    "&f消耗电力，将周围的石头或下界岩",
-                    "&f转化为矿石。",
+                    "&fConsome energia para transformar pedra",
+                    "&fou pedra do Nether próximas em minério.",
                     "",
                     LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
-                    LoreBuilderDynamic.power(1024, " 每个方块")));
+                    LoreBuilderDynamic.power(1024, " por bloco")));
 
     public static final ItemWrapper WIRELESS_ENERGY_POINT = ItemWrapper.create(Keys.WIRELESS_ENERGY_POINT,
             new SlimefunItemStack(Keys.WIRELESS_ENERGY_POINT.asSlimefunId(), new CustomItemStack(
                     PlayerHead.getItemStack(
                             PlayerSkin.fromHashCode("335a21d95e8597759fb259c951ea68e1ad3374ca41e56ef126ffabfe03c1e0"))),
-                    "&6无线能源节点",
+                    "&6Ponto de Energia Sem Fio",
                     "",
-                    "&f从无线能源库",
-                    "&f无线传输能源",
+                    "&fTransmite energia remotamente",
+                    "&fa partir de um Banco de Energia Sem Fio",
                     "",
-                    "&e右键点击&6无线能源库&7与其绑定",
+                    "&eClique direito&6 num Banco de Energia Sem Fio&7 para se vincular a ele",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilder.powerBuffer(5120),
@@ -587,10 +564,10 @@ public class Items {
     public static final ItemWrapper WIRELESS_ENERGY_BANK = ItemWrapper.create(Keys.WIRELESS_ENERGY_BANK,
             new SlimefunItemStack(Keys.WIRELESS_ENERGY_BANK.asSlimefunId(),
                     Material.SNOW_BLOCK,
-                    "&6无线能源库",
+                    "&6Banco de Energia Sem Fio",
                     "",
-                    "&f存储电力以",
-                    "&f供无线能源节点使用。",
+                    "&fArmazena energia para",
+                    "&fos Pontos de Energia Sem Fio usarem.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.CAPACITOR),
                     LoreBuilder.powerBuffer(10240),
@@ -600,11 +577,12 @@ public class Items {
     public static final ItemWrapper TESSERACT = ItemWrapper.create(Keys.TESSERACT,
             new SlimefunItemStack(Keys.TESSERACT.asSlimefunId(),
                     Material.PURPUR_BLOCK,
-                    "&6光学传输仪",
+                    "&6Transmissor Óptico",
                     "",
-                    "&f可双向无线传输电力与物品",
+                    "&fTransmite energia e itens remotamente",
+                    "&fnos dois sentidos",
                     "",
-                    "&9使用光学绑定仪进行绑定",
+                    "&9Vincule usando o Vinculador Óptico",
                     "",
                     LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
                     LoreBuilder.powerBuffer(65535),
@@ -616,14 +594,14 @@ public class Items {
                     new CustomItemStack(PlayerHead.getItemStack(
                             PlayerSkin
                                     .fromHashCode("abb55560c695d976b346e188d3df2bcd8c5aa32b933141a9715c42f64cb6cee"))),
-                    "&6无线物品输入节点",
+                    "&6Nó de Entrada de Itens Sem Fio",
                     "",
-                    "&f无线传输物品到",
-                    "&f对应的输出节点",
+                    "&fTransmite itens remotamente",
+                    "&fpro nó de saída correspondente",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilder.powerBuffer(1024),
-                    LoreBuilderDynamic.power(8, " 每格物品"),
+                    LoreBuilderDynamic.power(8, " por item"),
                     ""));
 
     public static final ItemWrapper WIRELESS_ITEM_OUTPUT = ItemWrapper.create(Keys.WIRELESS_ITEM_OUTPUT,
@@ -631,37 +609,38 @@ public class Items {
                     new CustomItemStack(PlayerHead.getItemStack(
                             PlayerSkin
                                     .fromHashCode("c510d9b61ca333d2946c61a26cb17e374d4adb573b46afdebaf89f65ba5d4ae2"))),
-                    "&6无线物品输出节点",
+                    "&6Nó de Saída de Itens Sem Fio",
                     "",
-                    "&f从对应的输入节点",
-                    "&f无线接收物品",
+                    "&fRecebe itens remotamente",
+                    "&fdo nó de entrada correspondente",
                     "",
-                    "&e右键点击输入节点以绑定",
+                    "&eClique direito&f num nó de entrada para vincular",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilder.powerBuffer(1024),
-                    LoreBuilderDynamic.power(8, " 每格物品"),
+                    LoreBuilderDynamic.power(8, " por item"),
                     ""));
 
     public static final ItemWrapper EXTERNAL_HEATER = ItemWrapper.create(Keys.EXTERNAL_HEATER,
             new SlimefunItemStack(Keys.EXTERNAL_HEATER.asSlimefunId(),
                     Material.BRICKS,
-                    "&6外部加热器",
+                    "&6Aquecedor Externo",
                     "",
-                    "&f从外部加热熔炉、高炉、烟熏炉。",
+                    "&fAquece fornalhas, fornos e defumadores",
+                    "&fao lado de fora.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilder.powerBuffer(2048),
-                    LoreBuilderDynamic.power(128, " 每个方块")));
+                    LoreBuilderDynamic.power(128, " por bloco")));
 
     public static final ItemWrapper GROWTH_CHAMBER = ItemWrapper.create(Keys.GROWTH_CHAMBER,
             new SlimefunItemStack(Keys.GROWTH_CHAMBER.asSlimefunId(),
                     Material.GREEN_STAINED_GLASS,
-                    "&6培育仓",
+                    "&6Câmara de Crescimento",
                     "",
-                    "&f可让&e植物&f自动生长。",
+                    "&fFaz &eplantas&f crescerem automaticamente.",
                     "",
-                    "&f&o就像小型温室。",
+                    "&f&oComo uma pequena estufa.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilder.speed(1),
@@ -670,10 +649,10 @@ public class Items {
     public static final ItemWrapper GROWTH_CHAMBER_OCEAN = ItemWrapper.create(Keys.GROWTH_CHAMBER_OCEAN,
             new SlimefunItemStack(Keys.GROWTH_CHAMBER_OCEAN.asSlimefunId(),
                     Material.CYAN_STAINED_GLASS,
-                    "&b海洋培育仓",
+                    "&bCâmara de Crescimento Oceânica",
                     "",
-                    "&f可让&e水生植物&f自动生长。",
-                    "&f可以复活失活的珊瑚！",
+                    "&fFaz &eplantas aquáticas&f crescerem automaticamente.",
+                    "&fPode reviver corais mortos!",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilder.speed(1),
@@ -682,9 +661,9 @@ public class Items {
     public static final ItemWrapper GROWTH_CHAMBER_NETHER = ItemWrapper.create(Keys.GROWTH_CHAMBER_NETHER,
             new SlimefunItemStack(Keys.GROWTH_CHAMBER_NETHER.asSlimefunId(),
                     Material.RED_STAINED_GLASS,
-                    "&c下界培育仓",
+                    "&cCâmara de Crescimento do Nether",
                     "",
-                    "&f可让&e下界植物&f自动生长。",
+                    "&fFaz &eplantas do Nether&f crescerem automaticamente.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilder.speed(1),
@@ -693,9 +672,9 @@ public class Items {
     public static final ItemWrapper GROWTH_CHAMBER_END = ItemWrapper.create(Keys.GROWTH_CHAMBER_END,
             new SlimefunItemStack(Keys.GROWTH_CHAMBER_END.asSlimefunId(),
                     Material.MAGENTA_STAINED_GLASS,
-                    "&d末地培育仓",
+                    "&dCâmara de Crescimento do End",
                     "",
-                    "&f可让&e紫颂花&f自动生长。",
+                    "&fFaz &eflor-de-chorus&f crescer automaticamente.",
                     "",
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
                     LoreBuilder.speed(1),
@@ -704,11 +683,11 @@ public class Items {
     public static final ItemWrapper GROWTH_CHAMBER_MK2 = ItemWrapper.create(Keys.GROWTH_CHAMBER_MK2,
             new SlimefunItemStack(Keys.GROWTH_CHAMBER_MK2.asSlimefunId(),
                     Material.LIME_STAINED_GLASS,
-                    "&6培育仓 MK2",
+                    "&6Câmara de Crescimento MK2",
                     "",
-                    "&f可让&e植物&f自动生长。",
+                    "&fFaz &eplantas&f crescerem automaticamente.",
                     "",
-                    "&f&o就像小型温室。",
+                    "&f&oComo uma pequena estufa.",
                     "",
                     THREE_X_PROD_LORE,
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
@@ -718,10 +697,10 @@ public class Items {
     public static final ItemWrapper GROWTH_CHAMBER_MK2_OCEAN = ItemWrapper.create(Keys.GROWTH_CHAMBER_MK2_OCEAN,
             new SlimefunItemStack(Keys.GROWTH_CHAMBER_MK2_OCEAN.asSlimefunId(),
                     Material.LIGHT_BLUE_STAINED_GLASS,
-                    "&b海洋培育仓 MK2",
+                    "&bCâmara de Crescimento Oceânica MK2",
                     "",
-                    "&f可让&e水生植物&f自动生长。",
-                    "&f可以复活失活的珊瑚！",
+                    "&fFaz &eplantas aquáticas&f crescerem automaticamente.",
+                    "&fPode reviver corais mortos!",
                     "",
                     THREE_X_PROD_LORE,
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
@@ -731,9 +710,9 @@ public class Items {
     public static final ItemWrapper GROWTH_CHAMBER_MK2_NETHER = ItemWrapper.create(Keys.GROWTH_CHAMBER_MK2_NETHER,
             new SlimefunItemStack(Keys.GROWTH_CHAMBER_MK2_NETHER.asSlimefunId(),
                     Material.RED_STAINED_GLASS,
-                    "&c下界培育仓 MK2",
+                    "&cCâmara de Crescimento do Nether MK2",
                     "",
-                    "&f可让&e下界植物&f自动生长。",
+                    "&fFaz &eplantas do Nether&f crescerem automaticamente.",
                     "",
                     THREE_X_PROD_LORE,
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
@@ -743,9 +722,9 @@ public class Items {
     public static final ItemWrapper GROWTH_CHAMBER_MK2_END = ItemWrapper.create(Keys.GROWTH_CHAMBER_MK2_END,
             new SlimefunItemStack(Keys.GROWTH_CHAMBER_MK2_END.asSlimefunId(),
                     Material.PURPLE_STAINED_GLASS,
-                    "&d末地培育仓 MK2",
+                    "&dCâmara de Crescimento do End MK2",
                     "",
-                    "&f可让&e紫颂花&f自动生长。",
+                    "&fFaz &eflor-de-chorus&f crescer automaticamente.",
                     "",
                     THREE_X_PROD_LORE,
                     LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
@@ -756,9 +735,9 @@ public class Items {
     public static final ItemWrapper PETAL_APOTHECARY = ItemWrapper.create(Keys.PETAL_APOTHECARY,
             new SlimefunItemStack(Keys.PETAL_APOTHECARY.asSlimefunId(),
                     Material.CAULDRON,
-                    "&d花药台",
+                    "&dBoticário de Pétalas",
                     "",
-                    "&f添加自然元素以制作令人惊叹的魔法植物。",
+                    "&fAdicione elementos naturais para criar plantas mágicas incríveis.",
                     "",
                     LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE)));
 
@@ -766,17 +745,17 @@ public class Items {
     // START Fluid Containers
     public static final ItemWrapper LAVA_BOTTLE = ItemWrapper.create(Keys.LAVA_BOTTLE, new SlimefunItemStack(
             Keys.LAVA_BOTTLE.asSlimefunId(), Color.ORANGE, new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 1, 1),
-            "&f岩浆瓶"));
+            "&fGarrafa de Lava"));
 
     public static final ItemWrapper MILK_BOTTLE = ItemWrapper.create(Keys.MILK_BOTTLE, new SlimefunItemStack(
             Keys.MILK_BOTTLE.asSlimefunId(), Color.WHITE, new PotionEffect(PotionEffectType.SATURATION, 1, 1),
-            "&f牛奶瓶"));
+            "&fGarrafa de Leite"));
 
     public static final ItemWrapper HONEY_BUCKET = ItemWrapper.create(Keys.HONEY_BUCKET,
-            new SlimefunItemStack(Keys.HONEY_BUCKET.asSlimefunId(), Material.LAVA_BUCKET, "&f蜂蜜桶"));
+            new SlimefunItemStack(Keys.HONEY_BUCKET.asSlimefunId(), Material.LAVA_BUCKET, "&fBalde de Mel"));
 
     public static final ItemWrapper POTION_BUCKET = ItemWrapper.create(Keys.POTION_BUCKET,
-            new SlimefunItemStack(Keys.POTION_BUCKET.asSlimefunId(), Material.WATER_BUCKET, "&f药水桶"));
+            new SlimefunItemStack(Keys.POTION_BUCKET.asSlimefunId(), Material.WATER_BUCKET, "&fBalde de Poção"));
 
     public static final class Keys {
         // START Mechanical Components
@@ -908,8 +887,6 @@ public class Items {
 
         public static final TypedKey<ItemWrapper> SCOOP = TypedKey.create("dynatech", "scoop");
 
-        public static final TypedKey<ItemWrapper> DIMENSIONAL_HOME = TypedKey.create("dynatech", "dimensional_home");
-
         public static final TypedKey<ItemWrapper> ITEM_BAND_HASTE = TypedKey.create("dynatech", "haste_item_band");
 
         public static final TypedKey<ItemWrapper> ITEM_BAND_HEALTH = TypedKey.create("dynatech", "health_item_band");
@@ -927,7 +904,6 @@ public class Items {
         // START Machines
         public static final TypedKey<ItemWrapper> COAL_COKE_OVEN = TypedKey.create("dynatech", "coal_coke_oven");
 
-        public static final TypedKey<ItemWrapper> AUTO_KITCHEN = TypedKey.create("dynatech", "auto_kitchen");
         public static final TypedKey<ItemWrapper> KITCHEN_AUTO_CRAFTER = TypedKey.create("dynatech",
                 "kitchen_auto_crafter");
 

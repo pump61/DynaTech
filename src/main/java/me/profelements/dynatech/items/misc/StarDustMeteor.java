@@ -20,10 +20,10 @@ public class StarDustMeteor extends UnplaceableBlock implements GEOResource {
     public static final SlimefunItemStack STARDUST_METEOR = new SlimefunItemStack(
         "STARDUST_METEOR",
         PlayerHead.getItemStack(PlayerSkin.fromHashCode("c482d1ba4bdac990f6ea987703587fd79fe55555363251984679d4f279cc0c2a")),
-        "&6星尘流星",
+        "&6Meteoro de Poeira Estelar",
         "",
-        "&f从山地或恶地(平顶山)生物群系中",
-        "&f使用 GEO 矿机开采"
+        "&fMinere com um GEO Miner em",
+        "&fbiomas de Pradaria ou Terras Áridas"
     );
 
     private final NamespacedKey key = new NamespacedKey(DynaTech.getInstance(), "stardust_meteor");
@@ -48,7 +48,7 @@ public class StarDustMeteor extends UnplaceableBlock implements GEOResource {
     @Nonnull
     @Override
     public String getName() {
-        return "星尘流星";
+        return "Meteoro de Poeira Estelar";
     }
 
     @Override

@@ -78,14 +78,14 @@ public class LiquidTank extends SlimefunItem implements NotPlaceable, Listener {
                 PersistentDataAPI.setInt(meta, FLUID_AMOUNT, fluidAmount + 1000);
 
                 List<String> lore = new ArrayList<>();
-                lore.add(ChatColor.GRAY + "简单的液体掠夺者");
+                lore.add(ChatColor.GRAY + "Um pilhador de líquidos simples");
                 lore.add("");
-                lore.add("右键点击装载液体");
-                lore.add("Shift + 右键点击倾倒液体");
+                lore.add("Clique direito para coletar líquido");
+                lore.add("Shift + Clique direito para despejar líquido");
                 lore.add("");
-                lore.add(ChatColor.WHITE + "液体类型: " + FluidUtils.getFluidType(PersistentDataAPI.getString(meta,
+                lore.add(ChatColor.WHITE + "Tipo de líquido: " + FluidUtils.getFluidType(PersistentDataAPI.getString(meta,
                     FLUID_NAME)));
-                lore.add(ChatColor.WHITE + "液体存量: " + PersistentDataAPI.getInt(meta, FLUID_AMOUNT));
+                lore.add(ChatColor.WHITE + "Quantidade: " + PersistentDataAPI.getInt(meta, FLUID_AMOUNT));
                 meta.setLore(lore);
                 item.setItemMeta(meta);
                 DynaTech.runSync(() -> block.setType(Material.AIR));
@@ -127,14 +127,14 @@ public class LiquidTank extends SlimefunItem implements NotPlaceable, Listener {
                             }
                             PersistentDataAPI.setInt(meta, FLUID_AMOUNT, fluidAmount - 1000);
                             List<String> lore = new ArrayList<>();
-                            lore.add(ChatColor.GRAY + "简单的液体掠夺者");
+                            lore.add(ChatColor.GRAY + "Um pilhador de líquidos simples");
                             lore.add("");
-                            lore.add("右键点击装载液体");
-                            lore.add("Shift + 右键点击倾倒液体");
+                            lore.add("Clique direito para coletar líquido");
+                            lore.add("Shift + Clique direito para despejar líquido");
                             lore.add("");
-                            lore.add(ChatColor.WHITE + "液体类型: " + FluidUtils.getFluidType(PersistentDataAPI.getString(meta,
+                            lore.add(ChatColor.WHITE + "Tipo de líquido: " + FluidUtils.getFluidType(PersistentDataAPI.getString(meta,
                                 FLUID_NAME)));
-                            lore.add(ChatColor.WHITE + "液体存量: " + PersistentDataAPI.getInt(meta, FLUID_AMOUNT));
+                            lore.add(ChatColor.WHITE + "Quantidade: " + PersistentDataAPI.getInt(meta, FLUID_AMOUNT));
                             meta.setLore(lore);
                             item.setItemMeta(meta);
                             DynaTech.runSync(() -> block.setType(mat));
@@ -220,14 +220,14 @@ public class LiquidTank extends SlimefunItem implements NotPlaceable, Listener {
         }
 
         for (int i = 0; i < lore.size(); i++) {
-            if (lore.get(i).contains("存储液体: ")) {
+            if (lore.get(i).contains("Líquido armazenado: ")) {
 
-                lore.set(i, ChatColor.WHITE + "存储液体: " + FluidUtils.getFluidType(fluidName));
+                lore.set(i, ChatColor.WHITE + "Líquido armazenado: " + FluidUtils.getFluidType(fluidName));
             }
 
-            if (lore.get(i).contains("容量: ")) {
+            if (lore.get(i).contains("Capacidade: ")) {
 
-                lore.set(i, ChatColor.WHITE + "容量: " + fluidAmount + "mb / " + getMaxLiquidAmount());
+                lore.set(i, ChatColor.WHITE + "Capacidade: " + fluidAmount + "mb / " + getMaxLiquidAmount());
             }
         }
 

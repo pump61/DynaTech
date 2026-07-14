@@ -21,26 +21,26 @@ public class ItemGroups {
 
     public static final NestedItemGroup GENERAL = new NestedItemGroup(
             Keys.GENERAL.key(),
-            new CustomItemStack(Material.CONDUIT, "&b动力科技"));
+            new CustomItemStack(Material.CONDUIT, "&bDynaTech"));
 
     public static final SubItemGroup RESOURCES = new SubItemGroup(
             Keys.RESOURCES.key(), GENERAL,
-            new CustomItemStack(Material.PUFFERFISH, "&b动力科技 - 资源"));
+            new CustomItemStack(Material.PUFFERFISH, "&bDynaTech - Recursos"));
 
     public static final SubItemGroup TOOLS = new SubItemGroup(Keys.TOOLS.key(),
-            GENERAL, new CustomItemStack(Material.DIAMOND_AXE, "&b动力科技 - 工具"));
+            GENERAL, new CustomItemStack(Material.DIAMOND_AXE, "&bDynaTech - Ferramentas"));
 
     public static final SubItemGroup MACHINES = new SubItemGroup(Keys.MACHINES.key(), GENERAL,
-            new CustomItemStack(Material.SEA_LANTERN, "&b动力科技 - 机器"));
+            new CustomItemStack(Material.SEA_LANTERN, "&bDynaTech - Máquinas"));
 
     public static final SubItemGroup GENERATORS = new SubItemGroup(Keys.GENERATORS.key(), GENERAL,
-            new CustomItemStack(Material.PRISMARINE_BRICKS, "&b动力科技 - 发电机"));
+            new CustomItemStack(Material.PRISMARINE_BRICKS, "&bDynaTech - Geradores"));
 
     public static final SubItemGroup EXPERIMENTAL = new SubItemGroup(Keys.EXPERIMENTAL.key(), GENERAL,
-            new CustomItemStack(Material.REDSTONE_LAMP, "&f动力科技 - 实验性物品"));
+            new CustomItemStack(Material.REDSTONE_LAMP, "&fDynaTech - Experimental"));
 
     public static final SubItemGroup HIVES = new SubItemGroup(Keys.APIARIES.key(),
-            GENERAL, new CustomItemStack(Material.BEEHIVE, "&b动力科技 - 蜂巢"));
+            GENERAL, new CustomItemStack(Material.BEEHIVE, "&bDynaTech - Colmeias"));
 
     public static final class Keys {
         public static final TypedKey<ItemGroup> GENERAL = TypedKey.create("dynatech", "general");

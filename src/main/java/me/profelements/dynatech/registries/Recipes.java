@@ -434,7 +434,7 @@ public class Recipes {
             .setInput(new CustomItemStack(
                     PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                             "12724a9a4cdd68ba49415560e5be40b4a1c47cb5be1d66aedb52a30e62ef2d47")),
-                    "&aAny Bee"))
+                    "&aQualquer Abelha"))
             .setOutput(Items.BEE.stack())
             .register();
 
@@ -627,17 +627,6 @@ public class Recipes {
             .setOutput(Items.SCOOP.stack())
             .register();
 
-    public static final Recipe DIMENSIONAL_HOME = Recipe.init()
-            .setKey(Keys.DIMENSIONAL_HOME.key())
-            .setRecipeType(RecipeType.MAGIC_WORKBENCH)
-            .setInput(new ItemStack[] {
-                    null, null, SlimefunItems.GOLD_24K_BLOCK,
-                    SlimefunItems.BRONZE_INGOT, new ItemStack(Material.BLAZE_ROD), null,
-                    SlimefunItems.SYNTHETIC_SAPPHIRE, SlimefunItems.BRONZE_INGOT, null
-
-            })
-            .setOutput(Items.DIMENSIONAL_HOME.stack())
-            .register();
 
     public static final Recipe ITEM_BAND_HASTE = Recipe.init()
             .setKey(Keys.ITEM_BAND_HASTE.key())
@@ -1228,8 +1217,6 @@ public class Recipes {
         public static final TypedKey<Recipe> ANGEL_GEM = TypedKey.create("dynatech", "angel_gem");
 
         public static final TypedKey<Recipe> SCOOP = TypedKey.create("dynatech", "scoop");
-
-        public static final TypedKey<Recipe> DIMENSIONAL_HOME = TypedKey.create("dynatech", "dimensional_home");
 
         public static final TypedKey<Recipe> ITEM_BAND_HASTE = TypedKey.create("dynatech", "haste_item_band");
         public static final TypedKey<Recipe> ITEM_BAND_HEALTH = TypedKey.create("dynatech", "health_item_band");

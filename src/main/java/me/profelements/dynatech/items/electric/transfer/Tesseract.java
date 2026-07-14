@@ -55,7 +55,7 @@ public class Tesseract extends SlimefunItem implements EnergyNetProvider {
 
         addItemHandler(onBlockBreak());
 
-        new BlockMenuPreset(Items.Keys.TESSERACT.asSlimefunId(), "&6光学传输器") {
+        new BlockMenuPreset(Items.Keys.TESSERACT.asSlimefunId(), "&6Transmissor Óptico") {
 
             @Override
             public void init() {
@@ -194,8 +194,8 @@ public class Tesseract extends SlimefunItem implements EnergyNetProvider {
 
         lore.clear();
         lore.add(Component.text(" "));
-        lore.add(Component.text(ChatColor.WHITE + "电力: " + currentCharge + "J"));
-        lore.add(Component.text(ChatColor.GREEN + "已连接"));
+        lore.add(Component.text(ChatColor.WHITE + "Energia: " + currentCharge + "J"));
+        lore.add(Component.text(ChatColor.GREEN + "Conectado"));
 
         im.lore(lore);
         knowledgePane.setItemMeta(im);
@@ -209,7 +209,7 @@ public class Tesseract extends SlimefunItem implements EnergyNetProvider {
         preset.drawBackground(ChestMenuUtils.getInputSlotTexture(), getInputBorder());
         preset.drawBackground(ChestMenuUtils.getOutputSlotTexture(), getOutputBorder());
         preset.addItem(
-                4, new CustomItemStack(Material.PURPLE_STAINED_GLASS_PANE, "&b当前状态", "&f电力: 未知", "&c未连接"),
+                4, new CustomItemStack(Material.PURPLE_STAINED_GLASS_PANE, "&bStatus Atual", "&fEnergia: Desconhecido", "&cDesconectado"),
                 ChestMenuUtils.getEmptyClickHandler());
     }
 
@@ -246,13 +246,13 @@ public class Tesseract extends SlimefunItem implements EnergyNetProvider {
         ItemMeta im = item.getItemMeta();
         List<Component> lore = im.lore();
         for (int i = 0; i < lore.size(); i++) {
-            if (lore.get(i).contains(Component.text("绑定位置："))) {
+            if (lore.get(i).contains(Component.text("Posição vinculada: "))) {
                 lore.remove(i);
             }
         }
 
         lore.add(Component.text(
-                ChatColor.WHITE + "绑定位置：" + l.getWorld().getName() + " " + l.getBlockX() + " " + l.getBlockY()
+                ChatColor.WHITE + "Posição vinculada: " + l.getWorld().getName() + " " + l.getBlockX() + " " + l.getBlockY()
                         + " " + l.getBlockZ()));
 
         im.lore(lore);

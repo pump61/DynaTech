@@ -116,7 +116,10 @@ public class MaterialHive extends AbstractElectricMachine implements Radioactive
     @Override
     public void postRegister() {
         super.postRegister();
-        registerDefaultHiveRecipes();
+        // Desativado de propósito: a receita original consumia 64x de um minério e
+        // devolvia só 1x do mesmo minério (perda líquida, sem nenhum indício de qual
+        // era o resultado pretendido). Sem receita registrada até alguém definir o
+        // que essa máquina deveria realmente produzir.
     }
 
     @Nonnull

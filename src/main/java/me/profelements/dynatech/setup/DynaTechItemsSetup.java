@@ -36,9 +36,7 @@ import me.profelements.dynatech.items.electric.machines.MineralizedApiary;
 import me.profelements.dynatech.items.electric.machines.Orechid;
 import me.profelements.dynatech.items.electric.generators.ChippingGenerator;
 import me.profelements.dynatech.items.electric.generators.CulinaryGenerator;
-import me.profelements.dynatech.items.electric.generators.DragonEggGenerator;
 import me.profelements.dynatech.items.electric.generators.EggMill;
-import me.profelements.dynatech.items.electric.generators.HydroGenerator;
 import me.profelements.dynatech.items.electric.generators.StardustReactor;
 import me.profelements.dynatech.items.electric.generators.WaterMill;
 import me.profelements.dynatech.items.electric.generators.WindMill;
@@ -65,7 +63,6 @@ import me.profelements.dynatech.items.misc.WitherGolem;
 import me.profelements.dynatech.items.tools.AngelGem;
 import me.profelements.dynatech.items.tools.AutoInputUpgrade;
 import me.profelements.dynatech.items.tools.AutoOutputUpgrade;
-import me.profelements.dynatech.items.tools.DimensionalHome;
 import me.profelements.dynatech.items.tools.ElectricalStimulator;
 import me.profelements.dynatech.items.tools.InventoryFilter;
 import me.profelements.dynatech.items.tools.LiquidContainerItem;
@@ -158,9 +155,6 @@ public class DynaTechItemsSetup {
 
         new Scoop(ItemGroups.TOOLS, Items.SCOOP.stack(), Recipes.SCOOP.getRecipeType(), Recipes.SCOOP.getInput())
                 .register(plugin);
-
-        new DimensionalHome(ItemGroups.TOOLS, Items.DIMENSIONAL_HOME.stack(), Recipes.DIMENSIONAL_HOME.getRecipeType(),
-                Recipes.DIMENSIONAL_HOME.getInput()).register(plugin);
 
         new ItemBand(ItemGroups.TOOLS, Items.ITEM_BAND_HEALTH.stack(), Recipes.ITEM_BAND_HEALTH.getRecipeType(),
                 Recipes.ITEM_BAND_HEALTH.getInput(),
@@ -634,10 +628,10 @@ public class DynaTechItemsSetup {
                 ItemWrapper APIARY = ItemWrapper.create(APIARY_KEY, new SlimefunItemStack(
                         APIARY_KEY.asSlimefunId(),
                         Material.BEEHIVE,
-                        "&f" + item.getItemName().replace("锭", "") + "&f矿化蜂箱",
+                        "&fColmeia Mineralizada: &f" + item.getItemName(),
                         "",
-                        "&f让蜜蜂来帮你",
-                        "&f生产材料",
+                        "&fDeixe as abelhas ajudarem você",
+                        "&fa produzir materiais.",
                         "",
                         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
                         LoreBuilder.powerBuffer(16384),
@@ -670,10 +664,10 @@ public class DynaTechItemsSetup {
 
             ItemWrapper APIARY = ItemWrapper.create(APIARY_KEY, new SlimefunItemStack(APIARY_KEY.asSlimefunId(),
                     Material.BEEHIVE,
-                    "&f" + ItemStackHelper.getName(item).replace("锭", "") + "&f矿化蜂箱",
+                    "&fColmeia Mineralizada: &f" + ItemStackHelper.getName(item),
                     "",
-                    "&f让蜜蜂来帮你",
-                    "&f生产材料",
+                    "&fDeixe as abelhas ajudarem você",
+                    "&fa produzir materiais.",
                     "",
                     LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
                     LoreBuilder.powerBuffer(16384),

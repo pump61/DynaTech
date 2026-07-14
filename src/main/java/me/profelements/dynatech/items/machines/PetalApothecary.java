@@ -57,14 +57,8 @@ public class PetalApothecary extends SlimefunItem {
             public void onRightClick(PlayerRightClickEvent event) {
 
                 if (event.getClickedBlock().get().getBlockData() instanceof Levelled lvl) {
-                    event.getPlayer()
-                            .sendMessage(Component.text("Level of cauldron = ").append(Component.text(lvl.getLevel())));
-
                     List<ItemStack> items = RECIPE_ITEMS
                             .getOrDefault(new BlockPosition(event.getClickedBlock().get()), new ArrayList<>());
-
-                    event.getPlayer()
-                            .sendMessage(Component.text("entries size: ").append(Component.text(RECIPE_ITEMS.size())));
 
                     for (ItemStack item : items) {
                         event.getPlayer().sendMessage(Component
