@@ -462,10 +462,9 @@ public class DynaTechItemsSetup {
         // END Generators
         // START Mechanical Components
 
-        // final Recipe woodMachineCoreRecipe = Recipes.WOOD_MACHINE_CORE;
-        new SlimefunItem(ItemGroups.EXPERIMENTAL, Items.WOOD_MACHINE_CORE.stack(), RecipeType.NULL, new ItemStack[9]).register(plugin);
-        // new UnplaceableBlock(ItemGroups.EXPERIMENTAL,
-        // Items.WOOD_MACHINE_CORE.stack()).register(plugin);
+        final Recipe woodMachineCoreRecipe = Recipes.WOOD_MACHINE_CORE;
+        new UnplaceableBlock(ItemGroups.EXPERIMENTAL, Items.WOOD_MACHINE_CORE.stack(),
+                woodMachineCoreRecipe.getRecipeType(), woodMachineCoreRecipe.getInput()).register(plugin);
 
         final Recipe stoneMachineCoreRecipe = Recipes.STONE_MACHINE_CORE;
         new UnplaceableBlock(ItemGroups.EXPERIMENTAL, Items.STONE_MACHINE_CORE.stack(),
