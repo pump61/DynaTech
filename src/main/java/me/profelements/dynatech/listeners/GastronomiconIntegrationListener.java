@@ -35,7 +35,11 @@ public class GastronomiconIntegrationListener implements Listener {
             for (SlimefunItem item : Slimefun.getRegistry().getEnabledSlimefunItems()) {
                 if (item.getItem() instanceof FoodItemStack food && !food.getTexture().equals(HeadTextures.NONE)
                         && !item.getId().contains("GN_PERFECT")) {
-                    cg.registerFuel(food, food.getHunger() * 4);
+                    // Bebidas (café, chocolate quente etc) não têm fome; MachineFuel exige duração > 0
+                    // e lançava IllegalArgumentException, abortando o resto do registro.
+                    if (food.getHunger() > 0) {
+                        cg.registerFuel(food, food.getHunger() * 4);
+                    }
                     PicnicBasket.registerFood(food, new Pair<>(food.getHunger(), (float) food.getSaturation()));
                 }
 
